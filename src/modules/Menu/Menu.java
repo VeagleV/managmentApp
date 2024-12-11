@@ -1,8 +1,8 @@
 package modules.Menu;
-import java.util.HashMap;
+import java.util.*;
 public class Menu {
 
-
+    HashMap<String, Runnable> menuitems = new HashMap<>();
 
 
 }
