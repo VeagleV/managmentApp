@@ -17,10 +17,6 @@ abstract public  class Mediator {
         }
 
     };
-
-
-
-
     public static @NotNull Task getTask(Integer id, ArrayList<Task> listOfTasks) {
 
         for (Task currentTask : listOfTasks) {
