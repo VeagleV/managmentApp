@@ -4,32 +4,46 @@ import java.time.LocalDateTime;
 
 public abstract class Task {
 
+    protected Integer id;
+    protected String name;
+    protected String status; // Complete/ InProcess /
+    protected String description;
+    protected final LocalDateTime creationTime;
 
-    public String getName();
-    public String getStatus();
-    public String getDescription();
-    public Integer getId();
+    protected Task() {
+        this.creationTime = LocalDateTime.now();
+    }
 
-    public LocalDateTime getPlannedTime();
+    public String getName() {
+        return name;
+    }
 
-    public LocalDateTime getCreationTime();
+    public String getStatus() {
+        return status;
+    }
 
-    public void setName(String name);
-    public void setStatus(String status);
-    public void setDescription(String description);
-    public void setPlannedTime(LocalDateTime plannedTime);
+    public String getDescription() {
+        return description;
+    }
 
-    public boolean isExpired();
+    public Integer getId() {
+        return id;
+    }
 
-//    default void updateTime(){
-//
-//        LocalDateTime currentTime= LocalDateTime.now();
-//
-//        if(plannedTime.isAfter(currentTime)){
-//            isExpired = true;
-//            status = "Expired";
-//
-//        }
-//    }
+    public LocalDateTime getCreationTime() {
+        return null;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setStatus(String status){
+        this.status = status;
+    }
+    public void setDescription(String description){
+        this.description = description;
+    }
+
 
 }
