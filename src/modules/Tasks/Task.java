@@ -2,7 +2,7 @@ package modules.Tasks;
 
 import java.time.LocalDateTime;
 
-public interface Task {
+public abstract class Task {
 
 
     public String getName();
@@ -31,4 +31,5 @@ public interface Task {
 //
 //        }
 //    }
+
 }

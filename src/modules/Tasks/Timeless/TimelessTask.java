@@ -1,9 +1,10 @@
 package modules.Tasks.Timeless;
+
 import modules.Tasks.Task;
 
 import java.time.LocalDateTime;
 
-public class TimelessTask implements Task{
+public class TimelessTask extends Task{
 
     private Integer id;
     private String name;
@@ -95,4 +96,5 @@ public class TimelessTask implements Task{
 
         }
     }
+
 }
