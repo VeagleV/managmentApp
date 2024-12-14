@@ -8,5 +8,9 @@ public class TimelessTask extends Task{
         super();
     }
 
+    public TimelessTask(Integer statusID, String name, String description){
+        super(statusID, name, description);
+    }
+
 
 }

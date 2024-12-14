@@ -5,20 +5,6 @@ import java.util.HashMap;
 import java.util.ArrayList;
 abstract public  class Mediator {
 
-    private static final HashMap<Integer, String> status = new HashMap<>(){
-        {
-            put(1, "In Progress");
-            put(2, "To do");
-            put(3, "Planned");
-            put(4, "Blocked");
-            put(5, "Expired");
-            put(6, "Done");
-
-        }
-
-    };
-
-
 
 
 //    public static @NotNull Task getTask(Integer id, ArrayList<Task> listOfTasks) {
