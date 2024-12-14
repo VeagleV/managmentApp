@@ -5,27 +5,19 @@ public class User {
     private String login;
     private String password;
     private final Integer id;
-
+    private static Integer counter = 0;
     private ArrayList<Task> listOfTasks = new ArrayList<>();
 
-    User(String login, String password, Integer id, ArrayList<Task> listOfTasks){
-        this.login = login;
-        this.password = password;
-        this.id = id;
-        this.listOfTasks = listOfTasks;
-    }
-
-    User(String login, String password, Integer id){
-        this.login = login;
-        this.password = password;
-        this.id = id;
+    User(){
+        this.id = counter++;
     }
 
     User(String login, String password){
+        this();
         this.login = login;
         this.password = password;
-        this.id = 0;
     }
+
 
     public String getLogin(){
         return login;
