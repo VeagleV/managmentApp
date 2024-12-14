@@ -1,7 +1,9 @@
 package modules.Tasks;
-
 import modules.Tasks.Timed.TimedTask;
 import modules.Tasks.Timeless.TimelessTask;
+
+public class TaskFactory {
+
 
 public class TaskFactory {
     public Task createTask(TaskType type){
@@ -14,4 +16,5 @@ public class TaskFactory {
 
         return task;
     }
+
 }
