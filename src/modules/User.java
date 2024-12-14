@@ -27,10 +27,6 @@ public class User {
         this.id = 0;
     }
 
-
-
-
-
     public String getLogin(){
         return login;
     }
@@ -50,25 +46,6 @@ public class User {
     public void setPassword(String password){
         this.password = password;
     }
-
-    public Task getTask(String name){
-
-        Integer currentID = getTaskId(name);
-
-        return Mediator.getTask(currentID, listOfTasks);
-    }
-
-    public Integer getTaskId(String name){
-        return Mediator.getTaskId(name, listOfTasks);
-    }
-
-
-    public void updateTask(Task task){
-        Mediator.updateTask(task, listOfTasks);
-    }
-
-
-
 
 
 
