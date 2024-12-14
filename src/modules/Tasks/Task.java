@@ -1,4 +1,6 @@
 package modules.Tasks;
 
-public interface Task {
+public abstract class Task {
+
+
 }

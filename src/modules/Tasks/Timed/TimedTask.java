@@ -1,4 +1,7 @@
 package modules.Tasks.Timed;
 
-public class TimedTask {
+import modules.Tasks.Task;
+
+public class TimedTask extends Task {
+
 }
