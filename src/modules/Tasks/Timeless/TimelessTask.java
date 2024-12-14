@@ -33,6 +33,10 @@ public class TimelessTask extends Task{
         this.creationTime = LocalDateTime.now();
     }
 
+    public TimelessTask() {
+
+    }
+
     @Override
     public String getName(){
         return name;
