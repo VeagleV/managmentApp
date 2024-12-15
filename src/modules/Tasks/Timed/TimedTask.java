@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 
 public class TimedTask extends Task {
     LocalDateTime plannedTime;
+
     public TimedTask(){
         super();
     }
