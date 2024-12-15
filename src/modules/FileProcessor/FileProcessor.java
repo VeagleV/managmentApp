@@ -1,7 +1,7 @@
 package modules.FileProcessor;
 
 import java.io.FileReader;
-
+import com.opencsv.*;
 public class FileProcessor {
     public static void readDataLineByLine(String file)
     {

@@ -1,6 +1,7 @@
 package modules.Tasks;
 import modules.Tasks.TaskStatus;
 import modules.Tasks.Timed.TimedTask;
+import modules.Tasks.Timeless.TimelessTask;
 
 import java.time.LocalDateTime;
 
@@ -67,6 +68,7 @@ public abstract class Task {
         newTask.setName(task.getName());
         newTask.setDescription(task.getDescription());
         newTask.setStatus(task.getStatus());
+        newTask.setPlannedTime(plannedTime);
 
         return newTask;
     }
