@@ -1,7 +1,9 @@
 package modules.Tasks;
+import modules.Tasks.TaskStatus;
+import modules.Tasks.Timed.TimedTask;
 
 import java.time.LocalDateTime;
-import modules.Tasks.TaskStatus;
+
 public abstract class Task {
 
     protected final Integer id;
@@ -56,6 +58,17 @@ public abstract class Task {
 
     public void setDescription(String description){
         this.description = description;
+    }
+
+
+    public Task assignTimeToTimelessTask(Task task, LocalDateTime plannedTime){
+        TimedTask newTask = new TimedTask();
+
+        newTask.setName(task.getName());
+        newTask.setDescription(task.getDescription());
+        newTask.setStatus(task.getStatus());
+
+        return newTask;
     }
 
 
