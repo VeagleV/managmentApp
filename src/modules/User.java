@@ -1,6 +1,13 @@
 package modules;
 import modules.Tasks.Task;
+import modules.Tasks.Timed.TimedTask;
+
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 
 public class User {
@@ -10,9 +17,35 @@ public class User {
     private final Integer id;
     private static Integer counter = 0;
     private HashMap<Integer, Task> tasks = new HashMap<>();
+    private ScheduledExecutorService scheduler;
+
+    public static final Logger LOGGER = Logger.getLogger(User.class.getName());
 
     User(){
         this.id = counter++;
+        startCheckingTasks();
+    }
+
+
+    //Запускает проверку на то, что задача просрочена, раз в секунду
+    private void startCheckingTasks() {
+        scheduler.scheduleAtFixedRate(()->{
+
+            for(int i = 0; i < tasks.size(); i++){
+
+                Task currentTask = (Task) Arrays.asList(tasks.values()).get(i);
+
+                if(currentTask instanceof TimedTask currentTimedTask){
+
+                    currentTimedTask.updatePlannedTime();
+
+                }
+            }
+        },0,1,TimeUnit.SECONDS);
+    }
+
+    public void stopCheckingTasks(){
+
     }
 
     User(String login, String password){
@@ -63,5 +96,8 @@ public class User {
         tasks.remove(task.getId());
 
     }
+
+
+
 
 }
