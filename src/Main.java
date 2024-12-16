@@ -24,8 +24,8 @@ public class Main {
     //TODO: Сохранение бд в файл(два файла csv, один для юзера, второй для тасков(1 значение - айди юзера)(stos)
     //TODO: Консольный интерфейс
 
-
-        LogCreator log = new LogCreator();
+       //Заглушка для проверки функционала
+        LogCreator log = new LogCreator(); // Данная строка **обязательна** для конфигурации логгера
 
         TaskFactory taskFactory = new TaskFactory();
 
