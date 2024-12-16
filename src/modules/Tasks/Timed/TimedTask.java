@@ -14,6 +14,7 @@ public class TimedTask extends Task {
 
     private LocalDateTime plannedTime;
     private boolean isExpired = false;
+
     public TimedTask(){
         super();
     }
