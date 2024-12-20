@@ -36,6 +36,8 @@ public class TimedTask extends Task {
 
         LocalDateTime now = LocalDateTime.now();
 
+        //TODO: переписать нахуй чтобы нормально работало, а не от вызова функции(выделить 1 поток для расчёта времени для всех тасков)
+
         if(now.isAfter(this.plannedTime)){
             isExpired = true;
         }
@@ -58,11 +60,11 @@ public class TimedTask extends Task {
         LocalDateTime difference = this.plannedTime;
         LocalDateTime now = LocalDateTime.now();
 
-        difference.minusDays(now.getDayOfYear());
-        difference.minusHours(now.getHour());
-        difference.minusMinutes(now.getMinute());
-        difference.minusSeconds(now.getSecond());
-        difference.minusNanos(now.getNano());
+        difference = difference.minusDays(now.getDayOfYear());
+        difference = difference.minusHours(now.getHour());
+        difference = difference.minusMinutes(now.getMinute());
+        difference = difference.minusSeconds(now.getSecond());
+        difference = difference.minusNanos(now.getNano());
 
         LOGGER.log(INFO,"Remaining time is Calculated");
         return difference;

@@ -1,6 +1,5 @@
 package modules.Tasks;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 
@@ -12,7 +11,6 @@ public enum TaskStatus {
     BLOCKED,
     DONE;
 
-    @NotNull
     public TaskStatus initStatus(Integer id){
 
         return TaskStatus.values()[id];

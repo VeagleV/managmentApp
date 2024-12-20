@@ -1,186 +1,688 @@
-дек. 16, 2024 1:49:44 AM modules.Tasks.TaskFactory <init>
+дек. 19, 2024 10:30:55 PM modules.Tasks.TaskFactory <init>
 INFO: Instance of TaskFactory Created
-дек. 16, 2024 1:49:45 AM modules.Tasks.TaskFactory createTask
+дек. 19, 2024 10:30:55 PM modules.Tasks.TaskFactory createTask
 INFO: Instance of TimedTask created(empty)
-дек. 16, 2024 1:49:45 AM modules.Tasks.TaskFactory createTask
+дек. 19, 2024 10:30:55 PM modules.Tasks.TaskFactory createTask
 INFO: Instance of TimelessTask created(with name and description)
-дек. 16, 2024 1:49:45 AM modules.Tasks.Task getName
+дек. 19, 2024 10:30:55 PM modules.Tasks.Task getName
 INFO: returned name
-дек. 16, 2024 1:49:45 AM modules.Tasks.Task setName
+дек. 19, 2024 10:30:55 PM modules.Tasks.Task setName
 INFO: Name set
-дек. 16, 2024 1:49:45 AM modules.Tasks.Task getDescription
+дек. 19, 2024 10:30:55 PM modules.Tasks.Task getDescription
 INFO: returned description
-дек. 16, 2024 1:49:45 AM modules.Tasks.Task setDescription
+дек. 19, 2024 10:30:55 PM modules.Tasks.Task setDescription
 INFO: Description set
-дек. 16, 2024 1:49:45 AM modules.Tasks.Task getStatus
+дек. 19, 2024 10:30:55 PM modules.Tasks.Task getStatus
 INFO: returned status
-дек. 16, 2024 1:49:45 AM modules.Tasks.Task setStatus
+дек. 19, 2024 10:30:55 PM modules.Tasks.Task setStatus
 INFO: Status set
-дек. 16, 2024 1:49:45 AM modules.Tasks.Task assignTimeToTimelessTask
+дек. 19, 2024 10:30:55 PM modules.Tasks.Task assignTimeToTimelessTask
 INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
-дек. 16, 2024 1:49:45 AM modules.Tasks.Task getCreationTime
+дек. 19, 2024 10:30:55 PM modules.Tasks.Task getCreationTime
 INFO: returned creationTime
-дек. 16, 2024 1:49:46 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:30:56 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:46 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:30:56 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:49:47 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:30:57 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:47 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:30:57 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:49:48 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:30:58 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:48 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:30:58 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:49:49 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:30:59 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:49 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:30:59 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:49:50 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:31:00 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:50 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:31:00 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:49:51 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:31:01 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:51 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:31:01 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:49:52 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:31:02 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:52 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:31:02 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:49:53 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:31:03 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:53 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:31:03 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:49:54 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:31:04 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:54 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:31:04 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:49:55 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:31:05 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:49:55 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:31:05 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:50:01 AM modules.Tasks.TaskFactory <init>
+дек. 19, 2024 10:32:30 PM modules.Tasks.TaskFactory <init>
 INFO: Instance of TaskFactory Created
-дек. 16, 2024 1:50:01 AM modules.Tasks.TaskFactory createTask
+дек. 19, 2024 10:32:30 PM modules.Tasks.TaskFactory createTask
 INFO: Instance of TimedTask created(empty)
-дек. 16, 2024 1:50:01 AM modules.Tasks.TaskFactory createTask
+дек. 19, 2024 10:32:30 PM modules.Tasks.TaskFactory createTask
 INFO: Instance of TimelessTask created(with name and description)
-дек. 16, 2024 1:50:01 AM modules.Tasks.Task getName
+дек. 19, 2024 10:32:30 PM modules.Tasks.Task getName
 INFO: returned name
-дек. 16, 2024 1:50:01 AM modules.Tasks.Task setName
+дек. 19, 2024 10:32:30 PM modules.Tasks.Task setName
 INFO: Name set
-дек. 16, 2024 1:50:01 AM modules.Tasks.Task getDescription
+дек. 19, 2024 10:32:30 PM modules.Tasks.Task getDescription
 INFO: returned description
-дек. 16, 2024 1:50:01 AM modules.Tasks.Task setDescription
+дек. 19, 2024 10:32:30 PM modules.Tasks.Task setDescription
 INFO: Description set
-дек. 16, 2024 1:50:01 AM modules.Tasks.Task getStatus
+дек. 19, 2024 10:32:30 PM modules.Tasks.Task getStatus
 INFO: returned status
-дек. 16, 2024 1:50:01 AM modules.Tasks.Task setStatus
+дек. 19, 2024 10:32:30 PM modules.Tasks.Task setStatus
 INFO: Status set
-дек. 16, 2024 1:50:01 AM modules.Tasks.Task assignTimeToTimelessTask
+дек. 19, 2024 10:32:30 PM modules.Tasks.Task assignTimeToTimelessTask
 INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
-дек. 16, 2024 1:50:01 AM modules.Tasks.Task getCreationTime
+дек. 19, 2024 10:32:30 PM modules.Tasks.Task getCreationTime
 INFO: returned creationTime
-дек. 16, 2024 1:50:02 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:32:31 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:50:02 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:32:31 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:50:03 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:32:32 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:50:03 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:32:32 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:50:04 AM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:32:33 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 1:50:04 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:32:33 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 1:50:05 AM modules.Tasks.Timed.TimedTask isExpired
-INFO: Field isExpired returned
-дек. 16, 2024 1:50:05 AM modules.Tasks.Timed.TimedTask updatePlannedTime
-INFO: plannedTime is updated
-дек. 16, 2024 1:50:06 AM modules.Tasks.Timed.TimedTask isExpired
-INFO: Field isExpired returned
-дек. 16, 2024 1:50:06 AM modules.Tasks.Timed.TimedTask updatePlannedTime
-INFO: plannedTime is updated
-дек. 16, 2024 1:50:07 AM modules.Tasks.Timed.TimedTask isExpired
-INFO: Field isExpired returned
-дек. 16, 2024 1:50:07 AM modules.Tasks.Timed.TimedTask updatePlannedTime
-INFO: plannedTime is updated
-дек. 16, 2024 1:50:08 AM modules.Tasks.Timed.TimedTask isExpired
-INFO: Field isExpired returned
-дек. 16, 2024 1:50:08 AM modules.Tasks.Timed.TimedTask updatePlannedTime
-INFO: plannedTime is updated
-дек. 16, 2024 1:50:09 AM modules.Tasks.Timed.TimedTask isExpired
-INFO: Field isExpired returned
-дек. 16, 2024 1:50:09 AM modules.Tasks.Timed.TimedTask updatePlannedTime
-INFO: plannedTime is updated
-дек. 16, 2024 1:50:10 AM modules.Tasks.Timed.TimedTask isExpired
-INFO: Field isExpired returned
-дек. 16, 2024 1:50:10 AM modules.Tasks.Timed.TimedTask updatePlannedTime
-INFO: plannedTime is updated
-дек. 16, 2024 1:50:11 AM modules.Tasks.Timed.TimedTask isExpired
-INFO: Field isExpired returned
-дек. 16, 2024 1:50:11 AM modules.Tasks.Timed.TimedTask updatePlannedTime
-INFO: plannedTime is updated
-дек. 16, 2024 9:28:16 PM modules.Tasks.TaskFactory <init>
+дек. 19, 2024 10:44:34 PM modules.Tasks.TaskFactory <init>
 INFO: Instance of TaskFactory Created
-дек. 16, 2024 9:28:16 PM modules.Tasks.TaskFactory createTask
+дек. 19, 2024 10:44:34 PM modules.Tasks.TaskFactory createTask
 INFO: Instance of TimedTask created(empty)
-дек. 16, 2024 9:28:16 PM modules.Tasks.TaskFactory createTask
+дек. 19, 2024 10:44:34 PM modules.Tasks.TaskFactory createTask
 INFO: Instance of TimelessTask created(with name and description)
-дек. 16, 2024 9:28:16 PM modules.Tasks.Task getName
+дек. 19, 2024 10:44:34 PM modules.Tasks.Task getName
 INFO: returned name
-дек. 16, 2024 9:28:16 PM modules.Tasks.Task setName
+дек. 19, 2024 10:44:34 PM modules.Tasks.Task setName
 INFO: Name set
-дек. 16, 2024 9:28:16 PM modules.Tasks.Task getDescription
+дек. 19, 2024 10:44:34 PM modules.Tasks.Task getDescription
 INFO: returned description
-дек. 16, 2024 9:28:16 PM modules.Tasks.Task setDescription
+дек. 19, 2024 10:44:34 PM modules.Tasks.Task setDescription
 INFO: Description set
-дек. 16, 2024 9:28:16 PM modules.Tasks.Task getStatus
+дек. 19, 2024 10:44:34 PM modules.Tasks.Task getStatus
 INFO: returned status
-дек. 16, 2024 9:28:16 PM modules.Tasks.Task setStatus
+дек. 19, 2024 10:44:34 PM modules.Tasks.Task setStatus
 INFO: Status set
-дек. 16, 2024 9:28:16 PM modules.Tasks.Task assignTimeToTimelessTask
+дек. 19, 2024 10:44:34 PM modules.Tasks.Task assignTimeToTimelessTask
 INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
-дек. 16, 2024 9:28:16 PM modules.Tasks.Task getCreationTime
+дек. 19, 2024 10:44:34 PM modules.Tasks.Task getCreationTime
 INFO: returned creationTime
-дек. 16, 2024 9:28:17 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 19, 2024 10:44:35 PM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:17 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 19, 2024 10:44:35 PM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 9:28:18 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 20, 2024 3:08:56 AM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 20, 2024 3:08:56 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 20, 2024 3:08:56 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 20, 2024 3:08:56 AM modules.Tasks.Task getName
+INFO: returned name
+дек. 20, 2024 3:08:56 AM modules.Tasks.Task setName
+INFO: Name set
+дек. 20, 2024 3:08:56 AM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 20, 2024 3:08:56 AM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 20, 2024 3:08:56 AM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 20, 2024 3:08:56 AM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 20, 2024 3:08:56 AM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 20, 2024 3:08:56 AM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 20, 2024 3:08:57 AM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:18 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 20, 2024 3:08:57 AM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 9:28:19 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 20, 2024 3:08:58 AM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:19 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 20, 2024 3:08:58 AM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 9:28:20 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 20, 2024 3:08:59 AM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:20 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 20, 2024 3:08:59 AM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 9:28:21 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 20, 2024 3:09:00 AM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:21 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 20, 2024 3:09:00 AM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 9:28:22 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 20, 2024 3:09:01 AM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:22 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 20, 2024 3:09:01 AM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 9:28:23 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 20, 2024 3:09:02 AM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:23 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 20, 2024 3:09:02 AM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 9:28:24 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 20, 2024 3:09:03 AM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:24 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 20, 2024 3:09:03 AM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 9:28:25 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 20, 2024 3:09:04 AM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:25 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 20, 2024 3:09:04 AM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated
-дек. 16, 2024 9:28:26 PM modules.Tasks.Timed.TimedTask isExpired
+дек. 20, 2024 3:09:05 AM modules.Tasks.Timed.TimedTask isExpired
 INFO: Field isExpired returned
-дек. 16, 2024 9:28:26 PM modules.Tasks.Timed.TimedTask updatePlannedTime
+дек. 20, 2024 3:09:05 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:09:06 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:09:06 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:25 AM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 20, 2024 3:10:25 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 20, 2024 3:10:25 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 20, 2024 3:10:25 AM modules.Tasks.Task getName
+INFO: returned name
+дек. 20, 2024 3:10:25 AM modules.Tasks.Task setName
+INFO: Name set
+дек. 20, 2024 3:10:25 AM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 20, 2024 3:10:25 AM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 20, 2024 3:10:25 AM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 20, 2024 3:10:25 AM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 20, 2024 3:10:25 AM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 20, 2024 3:10:25 AM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 20, 2024 3:10:27 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:27 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:27 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:28 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:28 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:28 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:29 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:29 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:29 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:30 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:30 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:30 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:31 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:31 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:31 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:32 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:32 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:32 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:33 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:33 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:33 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:34 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:34 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:34 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:35 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:35 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:35 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:10:36 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:10:36 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:10:36 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:11:52 AM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 20, 2024 3:11:52 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 20, 2024 3:11:52 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 20, 2024 3:11:52 AM modules.Tasks.Task getName
+INFO: returned name
+дек. 20, 2024 3:11:52 AM modules.Tasks.Task setName
+INFO: Name set
+дек. 20, 2024 3:11:52 AM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 20, 2024 3:11:52 AM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 20, 2024 3:11:52 AM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 20, 2024 3:11:52 AM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 20, 2024 3:11:52 AM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 20, 2024 3:11:52 AM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 20, 2024 3:11:53 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:12:02 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:12:02 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:12:10 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:12:14 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:12:41 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:45 AM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 20, 2024 3:16:45 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 20, 2024 3:16:45 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 20, 2024 3:16:45 AM modules.Tasks.Task getName
+INFO: returned name
+дек. 20, 2024 3:16:45 AM modules.Tasks.Task setName
+INFO: Name set
+дек. 20, 2024 3:16:45 AM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 20, 2024 3:16:45 AM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 20, 2024 3:16:45 AM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 20, 2024 3:16:45 AM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 20, 2024 3:16:45 AM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 20, 2024 3:16:45 AM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 20, 2024 3:16:46 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:46 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:46 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:47 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:47 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:47 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:48 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:48 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:48 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:49 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:49 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:49 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:50 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:50 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:50 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:51 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:51 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:51 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:52 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:52 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:52 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:53 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:53 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:53 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:54 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:54 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:54 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:16:55 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:16:55 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:16:55 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:01 AM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 20, 2024 3:17:01 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 20, 2024 3:17:01 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 20, 2024 3:17:01 AM modules.Tasks.Task getName
+INFO: returned name
+дек. 20, 2024 3:17:01 AM modules.Tasks.Task setName
+INFO: Name set
+дек. 20, 2024 3:17:01 AM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 20, 2024 3:17:01 AM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 20, 2024 3:17:01 AM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 20, 2024 3:17:01 AM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 20, 2024 3:17:01 AM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 20, 2024 3:17:01 AM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 20, 2024 3:17:02 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:02 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:02 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:03 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:03 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:03 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:04 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:04 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:04 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:05 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:05 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:05 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:06 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:06 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:06 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:07 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:07 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:07 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:08 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:08 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:08 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:09 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:09 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:09 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:10 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:10 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:10 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:11 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:17:11 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:17:11 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:17:47 AM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 20, 2024 3:17:47 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 20, 2024 3:17:47 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 20, 2024 3:17:47 AM modules.Tasks.Task getName
+INFO: returned name
+дек. 20, 2024 3:17:47 AM modules.Tasks.Task setName
+INFO: Name set
+дек. 20, 2024 3:17:47 AM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 20, 2024 3:17:47 AM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 20, 2024 3:17:47 AM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 20, 2024 3:17:47 AM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 20, 2024 3:17:47 AM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 20, 2024 3:17:47 AM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 20, 2024 3:18:28 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:28 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:28 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:30 AM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 20, 2024 3:18:31 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 20, 2024 3:18:31 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 20, 2024 3:18:31 AM modules.Tasks.Task getName
+INFO: returned name
+дек. 20, 2024 3:18:31 AM modules.Tasks.Task setName
+INFO: Name set
+дек. 20, 2024 3:18:31 AM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 20, 2024 3:18:31 AM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 20, 2024 3:18:31 AM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 20, 2024 3:18:31 AM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 20, 2024 3:18:31 AM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 20, 2024 3:18:31 AM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 20, 2024 3:18:32 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:32 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:32 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:33 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:33 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:33 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:34 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:34 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:34 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:35 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:35 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:35 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:36 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:36 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:36 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:37 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:37 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:37 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:38 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:38 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:38 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:39 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:39 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:39 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:40 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:40 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:40 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:18:41 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:18:41 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:18:41 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:13 AM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 20, 2024 3:19:13 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 20, 2024 3:19:13 AM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 20, 2024 3:19:13 AM modules.Tasks.Task getName
+INFO: returned name
+дек. 20, 2024 3:19:13 AM modules.Tasks.Task setName
+INFO: Name set
+дек. 20, 2024 3:19:13 AM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 20, 2024 3:19:13 AM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 20, 2024 3:19:13 AM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 20, 2024 3:19:13 AM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 20, 2024 3:19:13 AM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 20, 2024 3:19:13 AM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 20, 2024 3:19:14 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:14 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:14 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:19:14 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:14 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:15 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:15 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:15 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:19:15 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:15 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:16 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:16 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:16 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:19:16 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:16 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:17 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:17 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:17 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:19:17 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:17 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:18 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:18 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:18 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:19:18 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:18 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:19 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:19 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:19 AM modules.Tasks.Timed.TimedTask getRemainingTime
+INFO: Remaining time is Calculated
+дек. 20, 2024 3:19:19 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:19 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:20 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:20 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:20 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:20 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:21 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:21 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:21 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:21 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:22 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:22 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:22 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:22 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:23 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:23 AM modules.Tasks.Timed.TimedTask updatePlannedTime
+INFO: plannedTime is updated
+дек. 20, 2024 3:19:23 AM modules.Tasks.Timed.TimedTask isExpired
+INFO: Field isExpired returned
+дек. 20, 2024 3:19:23 AM modules.Tasks.Timed.TimedTask updatePlannedTime
 INFO: plannedTime is updated

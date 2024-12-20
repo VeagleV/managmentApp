@@ -10,7 +10,7 @@ public class LogCreator {
     public static Logger LOGGER;
 
     static {
-        try(FileInputStream ins = new FileInputStream("src/modules/LogCreator/log.config")){ //относительный путь до файла с конфигами
+        try(FileInputStream ins = new FileInputStream("src/main/java/modules/LogCreator/log.config")){ //относительный путь до файла с конфигами
             LogManager.getLogManager().readConfiguration(ins);
             LOGGER = Logger.getLogger(LogCreator.class.getName());
 

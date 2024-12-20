@@ -43,6 +43,7 @@ public class Main {
         for(int i = 0; i < 10; i++) {
             try {
                 sleep(1000);
+                if (!newnewTimedTask.isExpired()) System.out.println(newnewTimedTask.getRemainingTime().getSecond());
                 System.out.println(newnewTimedTask.isExpired());
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
