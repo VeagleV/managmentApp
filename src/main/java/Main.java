@@ -9,6 +9,11 @@ import modules.Tasks.Task;
 import modules.Tasks.TaskFactory;
 import modules.Tasks.TaskType;
 import modules.Tasks.Timed.TimedTask;
+import modules.User;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.Session;
+
 
 import static java.lang.Thread.sleep;
 
@@ -37,19 +42,35 @@ public class Main {
         LocalDateTime date = LocalDateTime.now();
         date = date.plusSeconds(7);
         TimedTask newnewTimedTask = Task.assignTimeToTimelessTask(newTimelessTask,date);
+        User user = new User();
+
+        user.assignTask(newnewTimedTask);
+        user.startCheckingTasks();
 
         System.out.println(newnewTimedTask.getCreationTime());
 
-        for(int i = 0; i < 10; i++) {
-            try {
-                sleep(1000);
-                if (!newnewTimedTask.isExpired()) System.out.println(newnewTimedTask.getRemainingTime().getSecond());
-                System.out.println(newnewTimedTask.isExpired());
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+        try {
+
+            sleep(10000);
+
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
 
+        System.out.println(newnewTimedTask.isExpired);
+
+
+//        for(int i = 0; i < 10; i++) {
+//            try {
+//                sleep(1000);
+//                if (!newnewTimedTask.isExpired()) System.out.println(newnewTimedTask.getRemainingTime().getSecond());
+//                System.out.println(newnewTimedTask.isExpired());
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
+
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 
 
 

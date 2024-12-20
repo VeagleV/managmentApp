@@ -2,18 +2,26 @@ package modules.Tasks.Timed;
 
 import modules.Tasks.Task;
 
+import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 import java.time.LocalDateTime;
 import java.time.temporal.TemporalAmount;
 import java.util.logging.Logger;
 
 import static java.util.logging.Level.INFO;
 
+@Entity
+@DiscriminatorValue("TimedTask")
 public class TimedTask extends Task {
 
     public static final Logger LOGGER = Logger.getLogger(TimedTask.class.getName());
 
+    @Column(name="plannedTime")
     private LocalDateTime plannedTime;
-    private boolean isExpired = false;
+
+
+    public boolean isExpired = false;
 
     public TimedTask(){
         super();

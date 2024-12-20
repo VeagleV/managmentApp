@@ -1,19 +1,41 @@
 package modules.Tasks;
 import modules.Tasks.Timed.TimedTask;
-
+import org.hibernate.SessionFactory;
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.logging.Logger;
 import static java.util.logging.Level.*;
 
+
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "type")
 public abstract class Task{
 
     public static final Logger LOGGER = Logger.getLogger(Task.class.getName());
 
+    @Id
     protected final Integer id;
+
+    @Column(name="name",nullable = false)
     protected String name;
+
+    @Column(name="status", nullable = false)
     protected TaskStatus status; // Complete/ InProcess /
+
+    @Column(name="description")
     protected String description;
+
+    @Column(name="creationTime", nullable = false)
     protected final LocalDateTime creationTime;
+
+    @Column(name="userID")
+    private Integer userID;
+
+    private SessionFactory sessionFactory;
+
     private static Integer counter = 0;
 
     protected Task() {
@@ -27,6 +49,7 @@ public abstract class Task{
         this.name = name;
         this.description = description;
     }
+
 
 
 
