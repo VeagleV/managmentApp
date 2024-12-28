@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -22,7 +23,6 @@ public class Main {
     public static final Logger LOGGER = Logger.getLogger(Main.class.getName());
 
 
-
     public static void main(String[] args) {
 
 
@@ -33,45 +33,29 @@ public class Main {
        //Заглушка для проверки функционала
         LogCreator log = new LogCreator(); // Данная строка **обязательна** для конфигурации логгера
 
-        TaskFactory taskFactory = new TaskFactory();
-
-        Task newTimedTask = taskFactory.createTask(TaskType.TIMED_TASK);
-
-        Task newTimelessTask = taskFactory.createTask(TaskType.TIMELESS_TASK, 2,"Clean up", "clean the room");
-
-        LocalDateTime date = LocalDateTime.now();
-        date = date.plusSeconds(7);
-        TimedTask newnewTimedTask = Task.assignTimeToTimelessTask(newTimelessTask,date);
-        User user = new User();
-
-        user.assignTask(newnewTimedTask);
-        user.startCheckingTasks();
-
-        System.out.println(newnewTimedTask.getCreationTime());
-
-        try {
-
-            sleep(10000);
-
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
-        System.out.println(newnewTimedTask.isExpired);
-
-
-//        for(int i = 0; i < 10; i++) {
-//            try {
-//                sleep(1000);
-//                if (!newnewTimedTask.isExpired()) System.out.println(newnewTimedTask.getRemainingTime().getSecond());
-//                System.out.println(newnewTimedTask.isExpired());
-//            } catch (InterruptedException e) {
-//                throw new RuntimeException(e);
-//            }
-//        }
-
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 
+        while(true) {
+            System.out.println("АВТОРИЗАЦИЯ");
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("1.РЕГАТЬСЯ");
+            System.out.println("2.НЕРЕГАТЬСЯ");
+            System.out.print("ВЫБОР: ");
+            Integer choice = scanner.nextInt();
+            System.out.print("LOGIN: ");
+            String login = scanner.next();
+            System.out.print("PASSWORD: ");
+            String password = scanner.next();
+            if(choice == 1) {
+                //тут запрос на добавление
+            }
+            if(choice == 2) {
+                //тут проверку на существование
+            }
+
+
+
+        }
 
 
     }
