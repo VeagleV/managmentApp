@@ -706,3 +706,312 @@ INFO: returned status
 INFO: Status set
 дек. 20, 2024 5:49:28 PM modules.Tasks.Task assignTimeToTimelessTask
 INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 22, 2024 3:32:09 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 22, 2024 3:32:09 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 22, 2024 3:32:09 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 22, 2024 3:32:09 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 22, 2024 3:32:09 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 22, 2024 3:32:09 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 22, 2024 3:32:09 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 22, 2024 3:32:09 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 22, 2024 3:32:09 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 22, 2024 3:32:09 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:31:25 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 28, 2024 7:31:25 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 28, 2024 7:31:25 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 28, 2024 7:31:25 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 28, 2024 7:31:25 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 28, 2024 7:31:25 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 28, 2024 7:31:25 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 28, 2024 7:31:25 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 28, 2024 7:31:25 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 28, 2024 7:31:25 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:33:06 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 28, 2024 7:33:06 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 28, 2024 7:33:06 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 28, 2024 7:33:06 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 28, 2024 7:33:06 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 28, 2024 7:33:06 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 28, 2024 7:33:06 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 28, 2024 7:33:06 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 28, 2024 7:33:06 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 28, 2024 7:33:06 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:33:06 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:33:13 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 28, 2024 7:33:13 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 28, 2024 7:33:13 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 28, 2024 7:33:13 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 28, 2024 7:33:13 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 28, 2024 7:33:13 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 28, 2024 7:33:13 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 28, 2024 7:33:13 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 28, 2024 7:33:13 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 28, 2024 7:33:13 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:33:13 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:33:43 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 28, 2024 7:33:43 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 28, 2024 7:33:43 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 28, 2024 7:33:43 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 28, 2024 7:33:43 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 28, 2024 7:33:43 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 28, 2024 7:33:43 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 28, 2024 7:33:43 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 28, 2024 7:33:43 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 28, 2024 7:33:43 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:33:44 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:35:04 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 28, 2024 7:35:04 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 28, 2024 7:35:04 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:35:04 PM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 28, 2024 7:35:14 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:35:15 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 28, 2024 7:35:15 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 28, 2024 7:35:15 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:35:15 PM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 28, 2024 7:35:26 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:35:32 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 28, 2024 7:35:32 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 28, 2024 7:35:32 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:35:32 PM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 28, 2024 7:35:42 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:36:08 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 28, 2024 7:36:08 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 28, 2024 7:36:08 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:36:08 PM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 28, 2024 7:36:49 PM modules.Tasks.TaskFactory <init>
+INFO: Instance of TaskFactory Created
+дек. 28, 2024 7:36:49 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimedTask created(empty)
+дек. 28, 2024 7:36:49 PM modules.Tasks.TaskFactory createTask
+INFO: Instance of TimelessTask created(with name and description)
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task getName
+INFO: returned name
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task setName
+INFO: Name set
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task getDescription
+INFO: returned description
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task setDescription
+INFO: Description set
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task getStatus
+INFO: returned status
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task setStatus
+INFO: Status set
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task assignTimeToTimelessTask
+INFO: TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task getId
+INFO: returned ID
+дек. 28, 2024 7:36:49 PM modules.Tasks.Task getCreationTime
+INFO: returned creationTime
+дек. 28, 2024 7:37:41 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:41:10 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:43:12 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:43:12 PM org.hibernate.cache.internal.RegionFactoryInitiator initiateService
+INFO: HHH000026: Second-level cache disabled
+дек. 28, 2024 7:43:12 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+дек. 28, 2024 7:43:13 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
+WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+дек. 28, 2024 7:43:13 PM org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator initiateService
+INFO: HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://26.112.136.54:5432/]
+	Database driver: org.postgresql.Driver
+	Database version: 15.10
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+дек. 28, 2024 7:43:14 PM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 8.0.2.Final
+дек. 28, 2024 7:43:14 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+дек. 28, 2024 7:49:35 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:49:36 PM org.hibernate.cache.internal.RegionFactoryInitiator initiateService
+INFO: HHH000026: Second-level cache disabled
+дек. 28, 2024 7:49:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+дек. 28, 2024 7:49:36 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
+WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+дек. 28, 2024 7:49:37 PM org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator initiateService
+INFO: HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://26.112.136.54:5432/]
+	Database driver: org.postgresql.Driver
+	Database version: 15.10
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+дек. 28, 2024 7:49:37 PM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 8.0.2.Final
+дек. 28, 2024 7:49:37 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+дек. 28, 2024 7:50:01 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.6.4.Final
+дек. 28, 2024 7:50:01 PM org.hibernate.cache.internal.RegionFactoryInitiator initiateService
+INFO: HHH000026: Second-level cache disabled
+дек. 28, 2024 7:50:01 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+дек. 28, 2024 7:50:02 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
+WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+дек. 28, 2024 7:50:02 PM org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator initiateService
+INFO: HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://26.112.136.54:5432/]
+	Database driver: org.postgresql.Driver
+	Database version: 15.10
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+дек. 28, 2024 7:50:03 PM org.hibernate.validator.internal.util.Version <clinit>
+INFO: HV000001: Hibernate Validator 8.0.2.Final
+дек. 28, 2024 7:50:03 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)

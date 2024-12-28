@@ -12,6 +12,7 @@ import static java.util.logging.Level.*;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "type")
+@Table(name="tasks")
 public abstract class Task{
 
     public static final Logger LOGGER = Logger.getLogger(Task.class.getName());
@@ -33,6 +34,11 @@ public abstract class Task{
 
     @Column(name="userID")
     private Integer userID;
+
+    //по хорошему так
+//    @ManyToOne
+//    @JoinColumn(name="user_id", nullable=true)
+//    private User user;
 
     private SessionFactory sessionFactory;
 
