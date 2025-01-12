@@ -12,9 +12,11 @@ import modules.Tasks.TaskType;
 import modules.Tasks.Timed.TimedTask;
 import modules.User;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.Session;
-
+import org.hibernate.query.Query;
+import modules.DataBaseProcessor.HibernateUtil;
 
 import static java.lang.Thread.sleep;
 
@@ -30,33 +32,20 @@ public class Main {
     //TODO: Консольный интерфейс
         //абаюмба
 
-       //Заглушка для проверки функционала
-        LogCreator log = new LogCreator(); // Данная строка **обязательна** для конфигурации логгера
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
 
-        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        User newUser = new User();
+        newUser.setLogin("admin");
+        newUser.setName("test");
+        newUser.setPassword("123");
 
-        while(true) {
-            System.out.println("АВТОРИЗАЦИЯ");
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("1.РЕГАТЬСЯ");
-            System.out.println("2.НЕРЕГАТЬСЯ");
-            System.out.print("ВЫБОР: ");
-            Integer choice = scanner.nextInt();
-            System.out.print("LOGIN: ");
-            String login = scanner.next();
-            System.out.print("PASSWORD: ");
-            String password = scanner.next();
-            if(choice == 1) {
-                //тут запрос на добавление
-            }
-            if(choice == 2) {
-                //тут проверку на существование
-            }
+        session.save(newUser);
 
+        session.getTransaction().commit();
+        session.close();
 
-
-        }
-
+        HibernateUtil.shutdown();
 
     }
 }
