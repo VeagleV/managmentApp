@@ -1,24 +1,9 @@
-import java.sql.SQLOutput;
-import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Scanner;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import modules.LogCreator.LogCreator;
-import modules.Tasks.Task;
-import modules.Tasks.TaskFactory;
-import modules.Tasks.TaskType;
-import modules.Tasks.Timed.TimedTask;
-import modules.User;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
+import modules.User.User;
 import org.hibernate.Session;
-import org.hibernate.query.Query;
 import modules.DataBaseProcessor.HibernateUtil;
 
-import static java.lang.Thread.sleep;
 
 public class Main {
 
@@ -36,7 +21,7 @@ public class Main {
         session.beginTransaction();
 
         User newUser = new User();
-        newUser.setLogin("admin");
+        newUser.setLogin("хуйmin");
         newUser.setName("test");
         newUser.setPassword("123");
 

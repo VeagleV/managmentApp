@@ -18,7 +18,7 @@
         <property name="hibernate.format_sql">true</property>
 
         <!-- Аннотированные классы -->
-        <mapping class="modules.User" />
+        <mapping class="modules.User.User" />
 
     </session-factory>
 </hibernate-configuration>

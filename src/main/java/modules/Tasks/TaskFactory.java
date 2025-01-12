@@ -1,5 +1,4 @@
 package modules.Tasks;
-import modules.LogCreator.LogCreator;
 import modules.Tasks.Timed.TimedTask;
 import modules.Tasks.Timeless.TimelessTask;
 
@@ -15,6 +14,7 @@ public class TaskFactory {
         LOGGER.log(Level.INFO,"Instance of TaskFactory Created");
     }
 
+    //----------------------TASKCREATORS----------------------
     public Task createTask(TaskType type) {
         Task task = null;
 
@@ -49,5 +49,5 @@ public class TaskFactory {
 
         return task;
     }
-
+    //----------------------TASKCREATORS----------------------
 }

@@ -1,12 +1,10 @@
 package modules.Tasks.Timed;
 
 import modules.Tasks.Task;
-
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+import jakarta.persistence.Column;
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
 import java.time.LocalDateTime;
-import java.time.temporal.TemporalAmount;
 import java.util.logging.Logger;
 
 import static java.util.logging.Level.INFO;
@@ -20,9 +18,9 @@ public class TimedTask extends Task {
     @Column(name="plannedTime")
     private LocalDateTime plannedTime;
 
-
     public boolean isExpired = false;
 
+    //----------------------CONSTRUCTORS----------------------
     public TimedTask(){
         super();
     }
@@ -30,41 +28,19 @@ public class TimedTask extends Task {
     public TimedTask(Integer statusID, String name, String description){
         super(statusID, name, description);
     }
+
     public TimedTask(Integer statusID, String name, String description, LocalDateTime plannedTime){
         this(statusID, name, description);
         this.plannedTime = plannedTime;
     }
+    //----------------------CONSTRUCTORS----------------------
 
-
+    //----------------------SETTERS/GETTERS----------------------
     public void setPlannedTime(LocalDateTime time){
         this.plannedTime = time;
     }
 
-    public void updatePlannedTime(){
-
-        LocalDateTime now = LocalDateTime.now();
-
-        //TODO: переписать нахуй чтобы нормально работало, а не от вызова функции(выделить 1 поток для расчёта времени для всех тасков)
-
-        if(now.isAfter(this.plannedTime)){
-            isExpired = true;
-        }
-
-        LOGGER.log(INFO,"plannedTime is updated");
-
-    }
-
-    public boolean isExpired(){
-
-        LOGGER.log(INFO,"Field isExpired returned");
-        updatePlannedTime();
-        return isExpired;
-
-    }
-
     public LocalDateTime getRemainingTime(){
-
-
         LocalDateTime difference = this.plannedTime;
         LocalDateTime now = LocalDateTime.now();
 
@@ -76,8 +52,14 @@ public class TimedTask extends Task {
 
         LOGGER.log(INFO,"Remaining time is Calculated");
         return difference;
-
-
     }
+
+    public boolean isExpired(){
+        LOGGER.log(INFO,"Field isExpired returned");
+        return isExpired;
+    }
+    //----------------------SETTERS/GETTERS----------------------
+
+
 
 }

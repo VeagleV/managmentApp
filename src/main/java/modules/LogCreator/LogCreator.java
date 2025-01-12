@@ -5,17 +5,20 @@ import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
+//данный класс предназначен для инициализация логгера, и его конфигурирования через log.config
 public class LogCreator {
-    //данный класс предназначен для инициализация логгера, и его конфигурирования через log.config
+
     public static Logger LOGGER;
 
     static {
-        try(FileInputStream ins = new FileInputStream("src/main/java/modules/LogCreator/log.config")){ //относительный путь до файла с конфигами
+        //относительный путь до файла с конфигами
+        try(FileInputStream ins = new FileInputStream("src/main/java/modules/LogCreator/log.config"))
+        {
             LogManager.getLogManager().readConfiguration(ins);
             LOGGER = Logger.getLogger(LogCreator.class.getName());
-
-
-        }catch (Exception ignore){
+        }
+        catch (Exception ignore)
+        {
             ignore.printStackTrace();
         }
     }
@@ -23,5 +26,4 @@ public class LogCreator {
     public static void createLog(Level level, String message){
         LOGGER.log(level, message);
     }
-
 }
