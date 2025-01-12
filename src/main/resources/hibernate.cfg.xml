@@ -1,14 +1,24 @@
 <hibernate-configuration>
     <session-factory>
 
-        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-        <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://26.112.136.54:5432/</property>
-        <property name="connection.username">postgres</property>
-        <property name="connection.password">ittimetovenom53</property>
-        <property name="hibernate.show_sql ">true</property>
-        <property name="hbm2ddl.auto">update</property>
+        <!-- JDBC URL, User и Пароль -->
+        <property name="hibernate.connection.url">jdbc:postgresql://26.241.91.95:5432/managmentApp</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">ittimetovenom53</property>
 
+        <!-- Драйвер JDBC -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+
+
+        <!-- Автоматическая генерация схемы (для разработки) -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Логирование SQL запросов -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Аннотированные классы -->
+        <mapping class="modules.User" />
 
     </session-factory>
 </hibernate-configuration>

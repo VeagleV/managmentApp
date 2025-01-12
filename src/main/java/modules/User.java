@@ -8,41 +8,35 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.*;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 @Entity
-@Table(name="users")
+@Table(name= "users")
 public class User {
 
     @Id
-    private final Integer id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-    @Column(name="name")
+    @Column(name="name", length = 50)
     private String name;
 
-    @Column(name="login",nullable = false,length = 32)
+    @Column(name="login", nullable = false,length = 50)
     private String login;
 
-    @Column(name="password", nullable = false)
+    @Column(name="password", nullable = false, length = 50)
     private String password;
 
-    private static Integer counter = 0;
+    private static Integer counter = 1;
 
 
     private HashMap<Integer, Task> tasks = new HashMap<>();
 
-
-    private ScheduledExecutorService scheduler;
 
     private SessionFactory sessionFactory;
 
@@ -107,6 +101,14 @@ public class User {
 
     public Integer getId(){
         return id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
     }
 
     public void setLogin(String login){
