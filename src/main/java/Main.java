@@ -5,10 +5,10 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import modules.User.User;
 import org.hibernate.Session;
 import modules.DataBaseProcessor.HibernateUtil;
+import org.hibernate.query.Query;
 
 
 public class Main {
@@ -46,6 +46,7 @@ public class Main {
             System.out.println("Please enter your password: ");
             String password = scanner.nextLine();
             user.setPassword(password);
+
             Query<User> query = session.createQuery(
                     "from User where login = :loginParam and password = :passwordParam",
                     User.class
@@ -92,13 +93,6 @@ public class Main {
                         break;
                     case 2:
                         findUser();
-
-        User newUser = new User();
-        newUser.setLogin("хуйmin");
-        newUser.setName("test");
-        newUser.setPassword("123");
-
-
                         break;
                     default: System.out.println("INVALID INPUT"); break;
                 }
