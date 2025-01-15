@@ -1,9 +1,8 @@
 package modules.Tasks;
+
 import modules.Tasks.Timed.TimedTask;
 import org.hibernate.SessionFactory;
-import org.hibernate.Session;
-import org.hibernate.cfg.Configuration;
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.logging.Logger;
 import static java.util.logging.Level.*;
@@ -36,14 +35,15 @@ public abstract class Task{
     private Integer userID;
 
     //по хорошему так
-//    @ManyToOne
-//    @JoinColumn(name="user_id", nullable=true)
-//    private User user;
-
+/*    @ManyToOne
+      @JoinColumn(name="user_id", nullable=true)
+      private User user;
+*/
     private SessionFactory sessionFactory;
 
     private static Integer counter = 0;
 
+    //----------------------CONSTRUCTORS----------------------
     protected Task() {
         this.creationTime = LocalDateTime.now();
         this.id = counter++;
@@ -55,11 +55,9 @@ public abstract class Task{
         this.name = name;
         this.description = description;
     }
+    //----------------------CONSTRUCTORS----------------------
 
-
-
-
-
+    //----------------------GETTERS/SETTERS----------------------
     public String getName() {
         LOGGER.log(INFO,"returned name");
         return name;
@@ -99,11 +97,9 @@ public abstract class Task{
         LOGGER.log(INFO,"Description set");
         this.description = description;
     }
-
+    //----------------------GETTERS/SETTERS----------------------
 
     public static TimedTask assignTimeToTimelessTask(Task task, LocalDateTime plannedTime){
-
-
         TimedTask newTask = new TimedTask();
 
         newTask.setName(task.getName());
@@ -113,8 +109,5 @@ public abstract class Task{
 
         LOGGER.log(INFO,"TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept");
         return newTask;
-
     }
-
-
 }

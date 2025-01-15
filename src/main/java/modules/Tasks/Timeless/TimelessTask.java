@@ -3,9 +3,8 @@ package modules.Tasks.Timeless;
 import modules.Tasks.Task;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
 import java.util.logging.Logger;
 
 @Entity
@@ -16,8 +15,7 @@ public class TimelessTask extends Task{
 
     private SessionFactory sessionFactory;
 
-
-
+    //----------------------CONSTRUCTORS----------------------
     public TimelessTask(){
         super();
 
@@ -26,10 +24,9 @@ public class TimelessTask extends Task{
                 .buildSessionFactory();
     }
 
-
     public TimelessTask(Integer statusID, String name, String description){
         super(statusID, name, description);
     }
-
+    //----------------------CONSTRUCTORS----------------------
 
 }
