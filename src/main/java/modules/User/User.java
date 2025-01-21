@@ -22,7 +22,7 @@ public class User {
     @Column(name="password", nullable = false, length = 50)
     private String password;
 
-    private static Integer counter = 2;
+    private static Integer counter = 0;
 
     private SessionFactory sessionFactory;
 
