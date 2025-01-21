@@ -9,6 +9,7 @@ import modules.User.User;
 import org.hibernate.Session;
 import modules.DataBaseProcessor.HibernateUtil;
 import org.hibernate.query.Query;
+import modules.ConsoleService.ConsoleMenu;
 
 
 public class Main {
@@ -71,34 +72,9 @@ public class Main {
 
         public static void main(String[] args) {
 
-            session.beginTransaction();
+            ConsoleMenu menu = new ConsoleMenu();
+            menu.start();
 
-            Scanner scanner = new Scanner(System.in);
-            int choice = -1;
-            while (choice != 0) {
-                System.out.println("1. Регистрация");
-                System.out.println("2. Войти");
-                if(scanner.hasNextInt()) {
-                    choice = scanner.nextInt();
-                }
-                else{
-                    System.out.println("INVALID INPUT");
-                    continue;
-                }
-                switch(choice){
-                    case 1:
-                        createUser();
-
-
-                        break;
-                    case 2:
-                        findUser();
-                        break;
-                    default: System.out.println("INVALID INPUT"); break;
-                }
-            }
-
-            session.getTransaction().commit();
             session.close();
 
             HibernateUtil.shutdown();
