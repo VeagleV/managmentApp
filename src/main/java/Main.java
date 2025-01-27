@@ -1,21 +1,17 @@
 
-import java.sql.SQLOutput;
-import java.time.LocalDateTime;
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.logging.Level;
 import java.util.logging.Logger;
-import modules.User.User;
+import modules.Entities.User.User;
 import org.hibernate.Session;
-import modules.DataBaseProcessor.HibernateUtil;
+import modules.DataBaseProcessor.DataBaseConnectionManager.DatabaseConnectionManager;
 import org.hibernate.query.Query;
-import modules.ConsoleService.ConsoleMenu;
+import modules.DataBaseProcessor.Services.ConsoleService.ConsoleMenu;
 
 
 public class Main {
 
         public static final Logger LOGGER = Logger.getLogger(Main.class.getName());
-        static Session session = HibernateUtil.getSessionFactory().openSession();
+        static Session session = DatabaseConnectionManager.getSessionFactory().openSession();
         static User user = new User();
 
         public static void createUser(){
@@ -77,7 +73,7 @@ public class Main {
 
             session.close();
 
-            HibernateUtil.shutdown();
+            DatabaseConnectionManager.shutdown();
 
         }
 }

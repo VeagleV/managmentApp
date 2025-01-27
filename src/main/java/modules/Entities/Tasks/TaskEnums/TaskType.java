@@ -1,4 +1,4 @@
-package modules.Tasks;
+package modules.Entities.Tasks.TaskEnums;
 
 public enum TaskType {
     TIMED_TASK,

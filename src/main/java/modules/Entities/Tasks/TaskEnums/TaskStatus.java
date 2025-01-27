@@ -1,7 +1,5 @@
-package modules.Tasks;
+package modules.Entities.Tasks.TaskEnums;
 
-
-import java.util.HashMap;
 
 public enum TaskStatus {
     PLANNED,
@@ -12,7 +10,6 @@ public enum TaskStatus {
     DONE;
 
     public TaskStatus initStatus(Integer id){
-
         return TaskStatus.values()[id];
     }
 

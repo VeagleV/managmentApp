@@ -1,4 +1,4 @@
-package modules.User;
+package modules.Entities.User;
 
 
 import org.hibernate.SessionFactory;
@@ -24,12 +24,18 @@ public class User {
 
     private static Integer counter = 0;
 
+    private static User instance;
+
+
+
     private SessionFactory sessionFactory;
 
     public static final Logger LOGGER = Logger.getLogger(User.class.getName());
 
     //----------------------CONSTRUCTORS----------------------
-    public User() {
+    public User(){}
+     /*
+     public User() {
         this.id = counter++;
 //        startCheckingTasks();
 
@@ -52,9 +58,23 @@ public class User {
         this.password = password;
         this.name = name;
     }
+
+      */
     //----------------------CONSTRUCTORS----------------------
 
     //----------------------GETTERS\SETTERS----------------------
+
+    public static User getInstance(){
+        if(instance == null){
+            synchronized (User.class){
+                if(instance == null){
+                    instance = new User();
+                }
+            }
+        }
+        return instance;
+    }
+
     public String getLogin(){
         return login;
     }

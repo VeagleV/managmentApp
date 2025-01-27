@@ -1,7 +1,9 @@
-package modules.Tasks;
-import modules.Tasks.Timed.TimedTask;
-import modules.Tasks.Timeless.TimelessTask;
+package modules.Entities.Tasks.TaskFactory;
 
+import modules.Entities.Tasks.Task.Task;
+import modules.Entities.Tasks.TimedTask.TimedTask;
+import modules.Entities.Tasks.TimelessTask.TimelessTask;
+import modules.Entities.Tasks.TaskEnums.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
