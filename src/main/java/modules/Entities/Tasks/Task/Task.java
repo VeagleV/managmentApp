@@ -1,6 +1,7 @@
-package modules.Tasks;
+package modules.Entities.Tasks.Task;
 
-import modules.Tasks.Timed.TimedTask;
+import modules.Entities.Tasks.TimedTask.TimedTask;
+import modules.Entities.Tasks.TaskEnums.*;
 import org.hibernate.SessionFactory;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;

@@ -1,7 +1,7 @@
-package modules.ConsoleService;
+package modules.DataBaseProcessor.Services.ConsoleService;
 
-import modules.User.User;
-import modules.Service.UserService;
+import modules.Entities.User.User;
+import modules.DataBaseProcessor.Services.UserService.UserService;
 import java.util.Scanner;
 
 public class ConsoleMenu {

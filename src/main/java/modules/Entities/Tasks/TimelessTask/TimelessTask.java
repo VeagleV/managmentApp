@@ -1,6 +1,6 @@
-package modules.Tasks.Timeless;
+package modules.Entities.Tasks.TimelessTask;
 
-import modules.Tasks.Task;
+import modules.Entities.Tasks.Task.Task;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import jakarta.persistence.DiscriminatorValue;

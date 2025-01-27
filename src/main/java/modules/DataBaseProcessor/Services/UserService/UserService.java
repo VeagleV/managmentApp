@@ -1,7 +1,7 @@
-package modules.Service;
+package modules.DataBaseProcessor.Services.UserService;
 
-import modules.DataAccess.UserDataAccess;
-import modules.User.User;
+import modules.DataBaseProcessor.DataAccess.UserDataAccess.UserDataAccess;
+import modules.Entities.User.User;
 
 public class UserService {
     private final UserDataAccess userDA = new UserDataAccess();

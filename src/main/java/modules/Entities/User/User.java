@@ -1,4 +1,4 @@
-package modules.User;
+package modules.Entities.User;
 
 
 import org.hibernate.SessionFactory;

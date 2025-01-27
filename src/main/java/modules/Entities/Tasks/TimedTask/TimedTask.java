@@ -1,6 +1,6 @@
-package modules.Tasks.Timed;
+package modules.Entities.Tasks.TimedTask;
 
-import modules.Tasks.Task;
+import modules.Entities.Tasks.Task.Task;
 import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;

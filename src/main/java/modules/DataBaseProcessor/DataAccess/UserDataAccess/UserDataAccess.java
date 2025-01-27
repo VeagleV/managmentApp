@@ -1,12 +1,12 @@
-package modules.DataAccess;
+package modules.DataBaseProcessor.DataAccess.UserDataAccess;
 
-import modules.User.User;
+import modules.Entities.User.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import modules.DataBaseProcessor.HibernateUtil;
+import modules.DataBaseProcessor.DataBaseConnectionManager.DatabaseConnectionManager;
 
 public class UserDataAccess {
-    Session session = HibernateUtil.getSessionFactory().openSession();
+    Session session = DatabaseConnectionManager.getSessionFactory().openSession();
 
     public User getByLoginAndPassword(String login, String password) {
         return session.createQuery("FROM User WHERE login= :login and password= :password", User.class)
