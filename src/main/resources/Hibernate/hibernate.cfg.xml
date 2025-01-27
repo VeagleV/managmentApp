@@ -17,5 +17,7 @@
 
         <!-- Аннотированные классы -->
         <mapping class="modules.Entities.User.User" />
+        <mapping class="modules.Entities.Tasks.Task.Task" />
+
     </session-factory>
 </hibernate-configuration>

@@ -22,4 +22,8 @@ public class UserService {
         userDA.save(user);
         return true;
     }
+
+    public void save(User currentUser) {
+        userDA.save(currentUser);
+    }
 }

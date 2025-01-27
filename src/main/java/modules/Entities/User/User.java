@@ -1,9 +1,15 @@
 package modules.Entities.User;
 
 
+
+import java.util.HashSet;
 import org.hibernate.SessionFactory;
 import jakarta.persistence.*;
+
+import java.util.Set;
 import java.util.logging.Logger;
+import modules.Entities.Tasks.Task.Task;
+
 
 @Entity
 @Table(name= "users")
@@ -22,11 +28,12 @@ public class User {
     @Column(name="password", nullable = false, length = 50)
     private String password;
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Task> tasks = new HashSet<Task>();
+
     private static Integer counter = 0;
 
     private static User instance;
-
-
 
     private SessionFactory sessionFactory;
 
@@ -91,6 +98,27 @@ public class User {
         return name;
     }
 
+    public Set<Task> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(Set<Task> tasks) {
+        this.tasks = tasks;
+        for (Task task : tasks) {
+            task.setUser(this); // Устанавливаем обратную связь
+        }
+    }
+
+    public void addTask(Task task) {
+        tasks.add(task);
+        task.setUser(this); // Устанавливаем обратную связь
+    }
+
+    public void removeTask(Task task) {
+        tasks.remove(task);
+        task.setUser(null); // Убираем обратную связь
+    }
+
     public void setName(String name){
         this.name = name;
     }
@@ -102,5 +130,5 @@ public class User {
     public void setPassword(String password){
         this.password = password;
     }
-    //----------------------GETTERS\SETTERS----------------------
+
 }

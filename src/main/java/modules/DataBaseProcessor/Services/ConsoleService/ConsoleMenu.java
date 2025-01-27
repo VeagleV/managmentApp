@@ -1,8 +1,15 @@
 package modules.DataBaseProcessor.Services.ConsoleService;
 
+import modules.Entities.Tasks.TimedTask.TimedTask;
 import modules.Entities.User.User;
+import modules.Entities.Tasks.Task.Task;
 import modules.DataBaseProcessor.Services.UserService.UserService;
+
+import java.time.format.DateTimeFormatter;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.time.LocalDateTime;
+import java.util.Set;
 
 public class ConsoleMenu {
     private final UserService userService = new UserService();
@@ -62,7 +69,6 @@ public class ConsoleMenu {
         System.out.println("1. Профиль");
         System.out.println("2. Просмотреть задачи");
         System.out.println("3. Добавить задачу");
-        System.out.println("4. Удалить задачу");
         System.out.println("0. Выйти");
 
         int choice = Integer.parseInt(scanner.nextLine());
@@ -70,7 +76,6 @@ public class ConsoleMenu {
             case 1 -> showProfile();
             case 2 -> viewTasks();
             case 3 -> addTask();
-            case 4 -> deleteTask();
             case 0 -> System.exit(0);
             default -> System.out.println("Неверный выбор.");
         }
@@ -84,11 +89,64 @@ public class ConsoleMenu {
     }
 
     private void addTask() {
-        //каминг сун на лицо
+        System.out.println("Название задачи: ");
+        String taskName = scanner.nextLine();
+
+        System.out.println("Статус:\n1.Запланированно;\n2.В процессе;\n3.Отложенное;\n4.Выполнен");
+        int taskStatus = -1;
+        while (taskStatus == -1) {
+            try{
+                System.out.println("\nВыбор: ");
+                taskStatus = Integer.parseInt(scanner.nextLine());
+            } catch (Exception e) {
+                taskStatus = -1;
+            }
+        }
+
+        System.out.println("Описание: ");
+        String taskDescription = scanner.nextLine();
+
+        System.out.println("Дедлайн: ");
+        System.out.println("Год: ");
+        String year = scanner.nextLine();
+
+        System.out.println("Месяц");
+        String month = scanner.nextLine();
+
+        System.out.println("День");
+        String day = scanner.nextLine();
+
+        System.out.println("Время(hh:mm:ss): ");
+        String hour = scanner.nextLine();
+
+        String str = year + "-" + month + "-" + day + " " + hour;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime dateTime = LocalDateTime.parse(str, formatter);
+
+        Task task = new TimedTask(taskStatus, taskName, taskDescription, dateTime);
+        currentUser.addTask(task);
+        userService.save(currentUser);
+
     }
 
     private void viewTasks() {
-        //каминг сун на лицо
+        Set<Task> tasks = currentUser.getTasks();
+        for (Task task : tasks) {
+            System.out.println("ID: " + task.getId());
+            System.out.println("name: " + task.getName());
+            System.out.println("description: " + task.getDescription());
+            System.out.println("status: " + task.getStatus() + "\n");
+        }
+        System.out.println("Введите id таска для входа в него(0 - выход): ");
+        int id = Integer.parseInt(scanner.nextLine());
+        if(id == 0) return;
+        for (Task task : currentUser.getTasks()) {
+            if (task.getId() == id) {
+                System.out.println("1.Переустановить статус\n2.Удалить задачу");
+                int choice = Integer.parseInt(scanner.nextLine());
+                //afasdfasf
+            }
+        }
     }
 
     private void deleteTask() {
