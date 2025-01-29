@@ -57,6 +57,8 @@ public class ConsoleService {
         System.out.print("Пароль: ");
         String password = scanner.nextLine();
 
+        //TODO: Добавить хеширование пароля(sha-256)
+
         if (UserService.register(username, password)) {
             System.out.println("Регистрация прошла успешно.");
         } else {
