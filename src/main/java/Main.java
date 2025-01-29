@@ -5,7 +5,7 @@ import modules.Entities.User.User;
 import org.hibernate.Session;
 import modules.DataBaseProcessor.DataBaseConnectionManager.DatabaseConnectionManager;
 import org.hibernate.query.Query;
-import modules.DataBaseProcessor.Services.ConsoleService.ConsoleMenu;
+import modules.DataBaseProcessor.Services.ConsoleService.ConsoleService;
 
 
 public class Main {
@@ -68,7 +68,7 @@ public class Main {
 
         public static void main(String[] args) {
 
-            ConsoleMenu menu = new ConsoleMenu();
+            ConsoleService menu = new ConsoleService();
             menu.start();
 
             session.close();

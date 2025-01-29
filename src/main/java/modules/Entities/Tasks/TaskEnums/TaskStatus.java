@@ -9,7 +9,7 @@ public enum TaskStatus {
     BLOCKED,
     DONE;
 
-    public TaskStatus initStatus(Integer id){
+    public static TaskStatus initStatus(Integer id) {
         return TaskStatus.values()[id];
     }
 

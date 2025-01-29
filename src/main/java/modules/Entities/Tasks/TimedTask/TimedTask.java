@@ -50,12 +50,15 @@ public class TimedTask extends Task {
         difference = difference.minusSeconds(now.getSecond());
         difference = difference.minusNanos(now.getNano());
 
-        LOGGER.log(INFO,"Remaining time is Calculated");
+        LOGGER.log(INFO, "Remaining time has been Calculated");
         return difference;
     }
 
     public boolean isExpired(){
         LOGGER.log(INFO,"Field isExpired returned");
+        if (this.plannedTime.isBefore(LocalDateTime.now())) {
+            this.isExpired = true;
+        }
         return isExpired;
     }
     //----------------------SETTERS/GETTERS----------------------

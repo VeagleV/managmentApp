@@ -14,7 +14,7 @@ import static java.util.logging.Level.*;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "type")
 @Table(name="tasks")
-public abstract class Task{
+public class Task {
 
     public static final Logger LOGGER = Logger.getLogger(Task.class.getName());
 

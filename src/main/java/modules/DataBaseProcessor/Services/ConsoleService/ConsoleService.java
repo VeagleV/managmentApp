@@ -4,14 +4,13 @@ import modules.Entities.Tasks.TimedTask.TimedTask;
 import modules.Entities.User.User;
 import modules.Entities.Tasks.Task.Task;
 import modules.DataBaseProcessor.Services.UserService.UserService;
-
 import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.util.Set;
 
-public class ConsoleMenu {
+public class ConsoleService {
     private final UserService userService = new UserService();
     private final Scanner scanner = new Scanner(System.in);
     private User currentUser = null;
@@ -58,7 +57,7 @@ public class ConsoleMenu {
         System.out.print("Пароль: ");
         String password = scanner.nextLine();
 
-        if (userService.register(username, password)) {
+        if (UserService.register(username, password)) {
             System.out.println("Регистрация прошла успешно.");
         } else {
             System.out.println("Пользователь уже существует.");

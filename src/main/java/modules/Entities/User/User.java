@@ -123,12 +123,41 @@ public class User {
         this.name = name;
     }
 
+    public void setID(Integer id) {
+        this.id = id;
+    }
+
     public void setLogin(String login){
         this.login = login;
     }
 
     public void setPassword(String password){
         this.password = password;
+    }
+    //----------------------GETTERS\SETTERS----------------------
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || this.getClass() != obj.getClass()) {
+            return false;
+        }
+        User user = (User) obj;
+        if (!this.login.equals(user.getLogin())) {
+            return false;
+        }
+        if (!this.password.equals(user.getPassword())) {
+            return false;
+        }
+        if (!this.name.equals(user.getName())) {
+            return false;
+        }
+        if (!this.id.equals(user.getId())) {
+            return false;
+        }
+        return true;
     }
 
 }
