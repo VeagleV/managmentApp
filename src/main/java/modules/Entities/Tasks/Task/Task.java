@@ -2,6 +2,7 @@ package modules.Entities.Tasks.Task;
 
 import modules.Entities.Tasks.TimedTask.TimedTask;
 import modules.Entities.Tasks.TaskEnums.*;
+import modules.Entities.User.User;
 import org.hibernate.SessionFactory;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
@@ -32,14 +33,10 @@ public abstract class Task{
     @Column(name="creationTime", nullable = false)
     protected final LocalDateTime creationTime;
 
-    @Column(name="userID")
-    private Integer userID;
+    @ManyToOne
+    @JoinColumn(name = "userid") // Поле внешнего ключа в таблице tasks
+    private User user;
 
-    //по хорошему так
-/*    @ManyToOne
-      @JoinColumn(name="user_id", nullable=true)
-      private User user;
-*/
     private SessionFactory sessionFactory;
 
     private static Integer counter = 0;
@@ -77,6 +74,14 @@ public abstract class Task{
     public Integer getId() {
         LOGGER.log(INFO,"returned ID");
         return id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public LocalDateTime getCreationTime() {
