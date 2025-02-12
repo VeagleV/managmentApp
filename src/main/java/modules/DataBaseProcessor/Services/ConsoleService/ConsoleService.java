@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
 import java.util.Set;
 
 public class ConsoleService {
-    private final UserService userService = new UserService();
     private final Scanner scanner = new Scanner(System.in);
     private User currentUser = null;
 
@@ -45,7 +44,7 @@ public class ConsoleService {
         System.out.print("Пароль: ");
         String password = scanner.nextLine();
 
-        currentUser = userService.login(username, password);
+        currentUser = UserService.login(username, password);
         if (currentUser == null) {
             System.out.println("Неверный логин или пароль.");
         }
@@ -117,7 +116,7 @@ public class ConsoleService {
         System.out.println("День");
         String day = scanner.nextLine();
 
-        System.out.println("Время(hh:mm:ss): ");
+        System.out.println("Время(HH:mm:ss): ");
         String hour = scanner.nextLine();
 
         String str = year + "-" + month + "-" + day + " " + hour;
@@ -126,7 +125,7 @@ public class ConsoleService {
 
         Task task = new TimedTask(taskStatus, taskName, taskDescription, dateTime);
         currentUser.addTask(task);
-        userService.save(currentUser);
+        UserService.save(currentUser);
 
     }
 

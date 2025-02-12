@@ -25,7 +25,7 @@ public class User {
     @Column(name="login", nullable = false,length = 50)
     private String login;
 
-    @Column(name="password", nullable = false, length = 50)
+    @Column(name = "password", nullable = false, length = 255)
     private String password;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)

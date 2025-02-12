@@ -3,9 +3,9 @@ package modules.DataBaseProcessor.DataBaseConnectionManager;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class DatabaseConnectionManager {
+public interface DatabaseConnectionManager {
 
-    private static final SessionFactory sessionFactory = buildSessionFactory();
+    SessionFactory sessionFactory = buildSessionFactory();
 
     // Создаем SessionFactory из hibernate.cfg.xml
     private static SessionFactory buildSessionFactory() {
@@ -16,12 +16,12 @@ public class DatabaseConnectionManager {
         }
     }
 
-    public static SessionFactory getSessionFactory() {
+    static SessionFactory getSessionFactory() {
         return sessionFactory;
     }
 
     //закрытие кеша и соединений
-    public static void shutdown() {
+    static void shutdown() {
         getSessionFactory().close();
     }
 }

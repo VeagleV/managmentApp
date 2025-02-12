@@ -8,7 +8,6 @@ import org.junit.jupiter.api.*;
 
 public class UserDataAccessTest {
 
-    private static UserDataAccess userDataAccess = new UserDataAccess();
     private static User expectedUser = new User();
 
     @BeforeAll
@@ -24,7 +23,7 @@ public class UserDataAccessTest {
     @Tag("UserDataAccessTest")
     @Tag("ExpectedSuccess")
     public void getByLoginAndPasswordTest() {
-        User testUser = userDataAccess.getByLoginAndPassword("sto", "dva");
+        User testUser = UserDataAccess.getByLoginAndPassword("sto", "dva");
         Assertions.assertEquals(expectedUser, testUser, "should be the same");
     }
 
@@ -33,7 +32,7 @@ public class UserDataAccessTest {
     @Tag("UserDataAccessTest")
     @Tag("ExpectedFail")
     public void getByLoginAndPasswordTest_Fail_LoginAndPassword() {
-        User testUser = userDataAccess.getByLoginAndPassword("stos1", "dvach");
+        User testUser = UserDataAccess.getByLoginAndPassword("stos1", "dvach");
         Assertions.assertNull(testUser, "should be null");
     }
 
@@ -42,7 +41,7 @@ public class UserDataAccessTest {
     @Tag("UserDataAccessTest")
     @Tag("ExpectedFail")
     public void getByLoginAndPasswordTest_Fail_Login() {
-        User testUser = userDataAccess.getByLoginAndPassword("stos1", "dva");
+        User testUser = UserDataAccess.getByLoginAndPassword("stos1", "dva");
         Assertions.assertNull(testUser, "should be null");
     }
 
@@ -51,7 +50,7 @@ public class UserDataAccessTest {
     @Tag("UserDataAccessTest")
     @Tag("ExpectedFail")
     public void getByLoginAndPasswordTest_Fail_Password() {
-        User testUser = userDataAccess.getByLoginAndPassword("stos", "dvach");
+        User testUser = UserDataAccess.getByLoginAndPassword("stos", "dvach");
         Assertions.assertNull(testUser, "should be null");
     }
 
@@ -60,7 +59,7 @@ public class UserDataAccessTest {
     @Tag("UserDataAccessTest")
     @Tag("ExpectedSuccess")
     public void getByLoginTest() {
-        User testUser = userDataAccess.getByLogin("sto");
+        User testUser = UserDataAccess.getByLogin("sto");
         Assertions.assertEquals(expectedUser, testUser, "should be the same");
     }
 
@@ -69,7 +68,7 @@ public class UserDataAccessTest {
     @Tag("UserDataAccessTest")
     @Tag("ExpectedFail")
     public void getByLoginTest_Fail() {
-        User testUser = userDataAccess.getByLogin("stos");
+        User testUser = UserDataAccess.getByLogin("stos");
         Assertions.assertNull(testUser, "should be null");
     }
 

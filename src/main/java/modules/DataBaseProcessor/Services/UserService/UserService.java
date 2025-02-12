@@ -2,29 +2,28 @@ package modules.DataBaseProcessor.Services.UserService;
 
 import modules.DataBaseProcessor.DataAccess.UserDataAccess.UserDataAccess;
 import modules.Entities.User.User;
+import modules.Hashing.PasswordHashing;
 
-public class UserService {
-    private static final UserDataAccess userDA = new UserDataAccess();
+public interface UserService {
 
-    public static User login(String login, String password) {
-        User user = userDA.getByLoginAndPassword(login, password);
-        return user;
+    static User login(String login, String password) {
+        return UserDataAccess.getByLoginAndPassword(login, PasswordHashing.hashPassword(password));
     }
 
 
-    public static boolean register(String login, String password) {
-        if (userDA.getByLogin(login) != null) {
+    static boolean register(String login, String password) {
+        if (UserDataAccess.getByLogin(login) != null) {
             return false; // Пользователь уже существует
         }
 
         User user = new User();
         user.setLogin(login);
-        user.setPassword(password);
-        userDA.save(user);
+        user.setPassword(PasswordHashing.hashPassword(password));
+        UserDataAccess.save(user);
         return true;
     }
 
-    public void save(User currentUser) {
-        userDA.save(currentUser);
+    static void save(User currentUser) {
+        UserDataAccess.save(currentUser);
     }
 }

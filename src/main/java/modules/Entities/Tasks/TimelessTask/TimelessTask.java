@@ -13,15 +13,10 @@ public class TimelessTask extends Task{
 
     public static final Logger LOGGER = Logger.getLogger(TimelessTask.class.getName());
 
-    private SessionFactory sessionFactory;
 
     //----------------------CONSTRUCTORS----------------------
     public TimelessTask(){
         super();
-
-        this.sessionFactory = new Configuration()
-                .configure()
-                .buildSessionFactory();
     }
 
     public TimelessTask(Integer statusID, String name, String description){
