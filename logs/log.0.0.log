@@ -1341,7 +1341,7 @@ java.lang.IllegalStateException: Cannot get a connection as the driver manager i
 	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:949)
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:999)
-	at Main.main(Main.java:42)
+	at main.Main.main(main.Main.java:42)
 
 янв. 12, 2025 8:30:14 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
 WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
@@ -1413,7 +1413,7 @@ java.lang.IllegalStateException: Cannot get a connection as the driver manager i
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:999)
 	at modules.DataBaseProcessor.DataBaseConnectionManager.DatabaseConnectionManager.buildSessionFactory(HibernateUtil.java:12)
 	at modules.DataBaseProcessor.DataBaseConnectionManager.DatabaseConnectionManager.<clinit>(HibernateUtil.java:7)
-	at Main.main(Main.java:39)
+	at main.Main.main(main.Main.java:39)
 
 янв. 12, 2025 8:48:28 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
 WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
@@ -1485,7 +1485,7 @@ java.lang.IllegalStateException: Cannot get a connection as the driver manager i
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:999)
 	at modules.DataBaseProcessor.DataBaseConnectionManager.DatabaseConnectionManager.buildSessionFactory(HibernateUtil.java:12)
 	at modules.DataBaseProcessor.DataBaseConnectionManager.DatabaseConnectionManager.<clinit>(HibernateUtil.java:7)
-	at Main.main(Main.java:39)
+	at main.Main.main(main.Main.java:39)
 
 янв. 12, 2025 8:49:54 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
 WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)

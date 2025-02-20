@@ -1,8 +1,6 @@
 package modules.Entities.Tasks.TaskFactory;
 
 import modules.Entities.Tasks.Task.Task;
-import modules.Entities.Tasks.TimedTask.TimedTask;
-import modules.Entities.Tasks.TimelessTask.TimelessTask;
 import modules.Entities.Tasks.TaskEnums.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,13 +19,8 @@ public class TaskFactory {
         Task task = null;
 
         switch (type) {
-            case TIMED_TASK -> {
-                task = new TimedTask();
-                LOGGER.log(Level.INFO,"Instance of TimedTask created(empty)");
-            }
-            case TIMELESS_TASK -> {
-                task = new TimelessTask();
-                LOGGER.log(Level.INFO,"Instance of TimelessTask created(empty)");
+            case TASK -> {
+                task = new Task();
             }
         }
 
@@ -38,14 +31,9 @@ public class TaskFactory {
 
         Task task = null;
 
-        switch (type){
-            case TIMED_TASK -> {
-                task = new TimedTask(statusID, name, description);
-                LOGGER.log(Level.INFO,"Instance of TimedTask created(with name and description)");
-            }
-            case TIMELESS_TASK -> {
-                task = new TimelessTask(statusID, name, description);
-                LOGGER.log(Level.INFO,"Instance of TimelessTask created(with name and description)");
+        switch (type) {
+            case TASK -> {
+                task = new Task(statusID, name, description);
             }
         }
 

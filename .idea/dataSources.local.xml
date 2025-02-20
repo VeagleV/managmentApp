@@ -16,5 +16,19 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="Hibernate:hibernate.cfg.xml/Hibernate" uuid="3d65a53f-c3bf-424a-9e9a-cf8a8c2808bb">
+      <database-info product="PostgreSQL" version="15.10" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.7.3" dbms="POSTGRES" exact-version="15.10" exact-driver-version="42.7">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>

@@ -1,6 +1,5 @@
 package modules.Entities.Tasks.Task;
 
-import modules.Entities.Tasks.TimedTask.TimedTask;
 import modules.Entities.Tasks.TaskEnums.*;
 import modules.Entities.User.User;
 import org.hibernate.SessionFactory;
@@ -12,7 +11,6 @@ import static java.util.logging.Level.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "type")
 @Table(name="tasks")
 public class Task {
 
@@ -33,6 +31,9 @@ public class Task {
     @Column(name="creationTime", nullable = false)
     protected final LocalDateTime creationTime;
 
+    @Column(name = "plannedTime")
+    private LocalDateTime plannedTime;
+
     @ManyToOne
     @JoinColumn(name = "userid") // Поле внешнего ключа в таблице tasks
     private User user;
@@ -42,17 +43,27 @@ public class Task {
     private static Integer counter = 0;
 
     //----------------------CONSTRUCTORS----------------------
-    protected Task() {
+    public Task() {
         this.creationTime = LocalDateTime.now();
         this.id = counter++;
     }
 
-    protected Task(Integer statusID, String name, String description){
+    public Task(Integer statusID, String name, String description) {
         this();
         this.status = TaskStatus.values()[statusID];
         this.name = name;
         this.description = description;
     }
+
+    public Task(Integer statusID, String name, String description, LocalDateTime plannedTime) {
+        this();
+        this.status = TaskStatus.values()[statusID];
+        this.name = name;
+        this.description = description;
+        this.plannedTime = plannedTime;
+    }
+
+
     //----------------------CONSTRUCTORS----------------------
 
     //----------------------GETTERS/SETTERS----------------------
@@ -105,15 +116,4 @@ public class Task {
     }
     //----------------------GETTERS/SETTERS----------------------
 
-    public static TimedTask assignTimeToTimelessTask(Task task, LocalDateTime plannedTime){
-        TimedTask newTask = new TimedTask();
-
-        newTask.setName(task.getName());
-        newTask.setDescription(task.getDescription());
-        newTask.setStatus(task.getStatus());
-        newTask.setPlannedTime(plannedTime);
-
-        LOGGER.log(INFO,"TimelessTask is morphed to the TimedTask(ID is updated, all old fields kept");
-        return newTask;
-    }
 }

@@ -1,11 +1,9 @@
 package modules.DataBaseProcessor.Services.ConsoleService;
 
-import modules.Entities.Tasks.TimedTask.TimedTask;
 import modules.Entities.User.User;
 import modules.Entities.Tasks.Task.Task;
 import modules.DataBaseProcessor.Services.UserService.UserService;
 import java.time.format.DateTimeFormatter;
-import java.util.HashSet;
 import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.util.Set;
@@ -14,6 +12,7 @@ public class ConsoleService {
     private final Scanner scanner = new Scanner(System.in);
     private User currentUser = null;
 
+    private UserService userService = new UserService();
     public void start() {
         while (true) {
             if (currentUser == null) {
@@ -44,7 +43,7 @@ public class ConsoleService {
         System.out.print("Пароль: ");
         String password = scanner.nextLine();
 
-        currentUser = UserService.login(username, password);
+        currentUser = userService.login(username, password);
         if (currentUser == null) {
             System.out.println("Неверный логин или пароль.");
         }
@@ -58,7 +57,7 @@ public class ConsoleService {
 
         //TODO: Добавить хеширование пароля(sha-256)
 
-        if (UserService.register(username, password)) {
+        if (userService.register(username, password)) {
             System.out.println("Регистрация прошла успешно.");
         } else {
             System.out.println("Пользователь уже существует.");
@@ -123,9 +122,10 @@ public class ConsoleService {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         LocalDateTime dateTime = LocalDateTime.parse(str, formatter);
 
-        Task task = new TimedTask(taskStatus, taskName, taskDescription, dateTime);
+        Task task = new Task(taskStatus, taskName, taskDescription, dateTime);
         currentUser.addTask(task);
-        UserService.save(currentUser);
+        UserService userService = new UserService();
+        userService.createUser(currentUser);
 
     }
 
