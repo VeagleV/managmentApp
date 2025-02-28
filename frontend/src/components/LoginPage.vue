@@ -12,6 +12,10 @@
           <input type="password" id="password" v-model="password" required />
         </div>
         <button type="submit" class="button">Войти</button>
+        <p class="login-link">
+          Нет аккаунта?
+          <router-link to="/register">Зарегестрироваться</router-link>
+        </p>
       </form>
     </div>
   </div>
@@ -59,6 +63,15 @@ export default {
   align-items: center;
   height: 100vh;
 }
+
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   background: white;
   padding: 40px;
@@ -67,6 +80,7 @@ export default {
   width: 350px;
   text-align: center;
 }
+
 h2 {
   color: #333;
   font-size: 24px;
