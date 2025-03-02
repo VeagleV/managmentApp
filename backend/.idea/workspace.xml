@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cc8b132-43c7-4ac4-adc2-6383dd9a50ee" name="Changes" comment="some fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LandingPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LandingPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LoginPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/project/managmentappweb/Configurators/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/project/managmentappweb/Configurators/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/bluebird/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/bluebird/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cy-http.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-eventemitter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-eventemitter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-expect.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-expect.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-global-vars.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-global-vars.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-npm-api.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-npm-api.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-type-helpers.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress-type-helpers.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/cypress.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/minimatch/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/minimatch/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/net-stubbing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/sinon/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/cypress/types/sinon/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/node_modules/eventemitter2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/node_modules/eventemitter2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/LandingPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/LandingPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nginx.conf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +42,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -75,6 +88,7 @@
     "Spring Boot.ManagmentAppWebApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lanse/IdeaProjects/managmentApp/backend",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -111,7 +125,7 @@
     </configuration>
     <configuration name="ManagmentAppWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="untitled" />
+      <module name="managmentAppWeb" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.project.managmentappweb.ManagmentAppWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,6 +163,7 @@
       <workItem from="1740500505481" duration="527000" />
       <workItem from="1740501090337" duration="3873000" />
       <workItem from="1740581069110" duration="13323000" />
+      <workItem from="1740779063496" duration="2161000" />
     </task>
     <task id="LOCAL-00001" summary="some fix">
       <option name="closed" value="true" />

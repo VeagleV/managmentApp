@@ -1,3 +1,214 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* src/assets/styles.css */
+
+/* Глобальные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Шапка */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+    transition: box-shadow 0.3s;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .cta-button {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cta-button:hover {
+    background: #1e51a8;
+  }
+  
+  .secondary-button {
+    background: #f0f0f0;
+    color: #333;
+  }
+  
+  .secondary-button:hover {
+    background: #dcdcdc;
+  }
+  
+  /* Герой */
+  .hero {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Футер */
+  .footer {
+    background: #2575fc;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Стили для страниц авторизации */
+  .auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-page .container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  .auth-page h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-page .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .auth-page .form-group.error input {
+    border-color: red;
+  }
+  
+  .auth-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .auth-page input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .auth-page input:focus {
+    background: #fff;
+    outline: none;
+    border-color: #2575fc;
+  }
+  
+  .auth-page button {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  .auth-page button:hover {
+    background: #1e51a8;
+  }
+  
+  .auth-page .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .auth-page .login-link {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+  }
+  
+  .auth-page .login-link a {
+    color: #2575fc;
+    text-decoration: none;
+  }
+  
+  .auth-page .login-link a:hover {
+    text-decoration: underline;
+  }

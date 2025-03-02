@@ -24,7 +24,7 @@ public class EmailService {
             message.setTo(to);
             message.setSubject("Подтверждение аккаунта");
             message.setText("Для подтверждения аккаунта перейдите по ссылке: "
-                    + "http://localhost:8081/verify?token=" + token);
+                    + "http://localhost/verify?token=" + token);
             mailSender.send(message);
             LOGGER.info("Письмо успешно отправлено на адрес: {}", to);
         } catch (Exception e) {
