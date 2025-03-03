@@ -5,9 +5,9 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       "/api": {
-        target: "http://localhost:8080", // URL вашего бэкенда
+        target: "http://localhost:8080", 
         changeOrigin: true,
-        pathRewrite: { "^/api": "" }, // Убираем префикс /api из пути
+        pathRewrite: { "^/api": "" }, 
       },
     },
   },
