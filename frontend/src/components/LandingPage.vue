@@ -4,7 +4,7 @@
     <header class="header">
       <div class="container">
         <div class="header-content">
-          <h1 class="logo">TaskFlow</h1>
+          <h1 class="logo">GoalHub</h1>
           <nav class="navbar">
             <button class="cta-button secondary-button" @click="goToLogin">
               Войти
@@ -21,17 +21,15 @@
     <main class="hero">
       <div class="container">
         <div class="hero-content">
-          <h2>Управляйте задачами легко и эффективно</h2>
+          <h2>GoalHub: Envision. Execute. Excel.</h2>
           <p>
-            TaskFlow — это мощный инструмент для управления проектами, который
-            помогает командам достигать целей быстрее.
+            GoalHub — это мощный инструмент для управления задачами, который
+            помогает вам ставить цели, достигать их и эффективно управлять
+            процессом.
           </p>
           <div class="hero-buttons">
             <button class="cta-button" @click="goToRegister">
-              Зарегистрироваться
-            </button>
-            <button class="cta-button secondary-button" @click="goToLogin">
-              Войти
+              Начать сейчас
             </button>
           </div>
         </div>
@@ -41,7 +39,7 @@
     <!-- Подвал -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 TaskFlow. Все права защищены.</p>
+        <p>&copy; 2025 GoalHub. Все права защищены.</p>
       </div>
     </footer>
   </div>
