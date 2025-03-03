@@ -22,9 +22,9 @@ public class EmailService {
             LOGGER.info("Начало отправки письма на адрес: {}", to);
             SimpleMailMessage message = new SimpleMailMessage();
             message.setTo(to);
-            message.setSubject("Подтверждение аккаунта");
+            message.setSubject("Подтверждение аккаунта на GoalHub");
             message.setText("Для подтверждения аккаунта перейдите по ссылке: "
-                    + "http://localhost/verify?token=" + token);
+                    + "https://goalhub.ru/verify?token=" + token);
             mailSender.send(message);
             LOGGER.info("Письмо успешно отправлено на адрес: {}", to);
         } catch (Exception e) {
