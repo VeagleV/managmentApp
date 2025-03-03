@@ -26,6 +26,11 @@ public class ManagmentAppWebApplication {
 		ОНИ УНИЧТОЖАЮТ БАЗУ ДАННЫХ НАХУЙ. ВСЕ ЛОГИНЫ И ПАРОЛИ УДАЛЯЮТСЯ
 	*/
 
+	//TODO: ДОБАВИТЬ .ENV ФАЙЛ ДЛЯ ВАЖНЫХ ВЕЩЕЙ(ПАРОЛИ И Т.Д.)
+	//TODO: ПОМЕНЯТЬ В ЛЕНДИНГ ПЕЙДЖ НАЗВАНИЕ
+	//TODO: как то подключиться к серверному докеру на своём пк.(portainer?) 
+	//TODO: как то подключиться к серверному постгре			(SSH в pgadmin4?)  
+
 	public static void main(String[] args) {
 		SpringApplication.run(ManagmentAppWebApplication.class, args);
 	}
